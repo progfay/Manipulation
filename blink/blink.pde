@@ -55,7 +55,7 @@ void draw() {
     ellipse(vec.x, vec.y, 25, 25);
   }
 
-  //if (frameCount <= BLUR_FRAME) return;
+  if (frameCount <= BLUR_FRAME) return;
   save("frame/" + nf(frameCount-BLUR_FRAME, 3) + ".png");
-  if (frameCount == 650 + BLUR_FRAME * 2) exit();
+  if (frameCount == 650 + BLUR_FRAME) exit();
 }
